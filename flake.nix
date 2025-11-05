@@ -12,7 +12,8 @@
   in {
     devShells.${system}.default = pkgs.mkShell {
       buildInputs = with pkgs; [
-        electron_38
+        electron_36
+        wine
         bun
       ];
       shellHook = ''
