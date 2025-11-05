@@ -12,7 +12,7 @@
   in {
     devShells.${system}.default = pkgs.mkShell {
       buildInputs = with pkgs; [
-        electron_36
+        electron
         wine
         bun
       ];
