@@ -1,0 +1,115 @@
+<svg viewBox="0 0 900 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- 仮想マシン -->
+  <g>
+    <text x="150" y="30" font-size="18" font-weight="bold" text-anchor="middle" fill="#333">仮想マシン</text>
+    
+    <!-- ホストOS -->
+    <rect x="30" y="50" width="240" height="80" fill="#495057" stroke="#212529" stroke-width="2" rx="5"/>
+    <text x="150" y="95" font-size="14" text-anchor="middle" fill="white">ホストOS + ハードウェア</text>
+    
+    <!-- ハイパーバイザー -->
+    <rect x="30" y="140" width="240" height="40" fill="#868e96" stroke="#495057" stroke-width="2" rx="5"/>
+    <text x="150" y="165" font-size="13" text-anchor="middle" fill="white">ハイパーバイザー</text>
+    
+    <!-- ゲストOS1 -->
+    <rect x="40" y="190" width="100" height="50" fill="#ffd43b" stroke="#fab005" stroke-width="2" rx="5"/>
+    <text x="90" y="210" font-size="12" text-anchor="middle" fill="#333">ゲストOS</text>
+    <text x="90" y="228" font-size="11" text-anchor="middle" fill="#666">(カーネル)</text>
+    
+    <!-- アプリ1 -->
+    <rect x="40" y="250" width="100" height="40" fill="#74c0fc" stroke="#339af0" stroke-width="2" rx="5"/>
+    <text x="90" y="275" font-size="12" text-anchor="middle" fill="#333">アプリA</text>
+    
+    <!-- ゲストOS2 -->
+    <rect x="160" y="190" width="100" height="50" fill="#ffd43b" stroke="#fab005" stroke-width="2" rx="5"/>
+    <text x="210" y="210" font-size="12" text-anchor="middle" fill="#333">ゲストOS</text>
+    <text x="210" y="228" font-size="11" text-anchor="middle" fill="#666">(カーネル)</text>
+    
+    <!-- アプリ2 -->
+    <rect x="160" y="250" width="100" height="40" fill="#74c0fc" stroke="#339af0" stroke-width="2" rx="5"/>
+    <text x="210" y="275" font-size="12" text-anchor="middle" fill="#333">アプリB</text>
+    
+    <!-- 重いマーク -->
+    <text x="150" y="320" font-size="16" text-anchor="middle" fill="#fa5252">⚠ 重い</text>
+  </g>
+  
+  <!-- Docker -->
+  <g>
+    <text x="450" y="30" font-size="18" font-weight="bold" text-anchor="middle" fill="#333">Docker</text>
+    
+    <!-- ホストOS -->
+    <rect x="330" y="50" width="240" height="80" fill="#495057" stroke="#212529" stroke-width="2" rx="5"/>
+    <text x="450" y="95" font-size="14" text-anchor="middle" fill="white">ホストOS + カーネル</text>
+    
+    <!-- Docker Engine -->
+    <rect x="330" y="140" width="240" height="40" fill="#339af0" stroke="#1971c2" stroke-width="2" rx="5"/>
+    <text x="450" y="165" font-size="13" text-anchor="middle" fill="white">Docker Engine</text>
+    
+    <!-- コンテナ1 -->
+    <rect x="340" y="190" width="100" height="50" fill="#ffd43b" stroke="#fab005" stroke-width="2" rx="5"/>
+    <text x="390" y="210" font-size="12" text-anchor="middle" fill="#333">ライブラリ</text>
+    <text x="390" y="228" font-size="11" text-anchor="middle" fill="#666">(依存関係)</text>
+    
+    <!-- アプリ1 -->
+    <rect x="340" y="250" width="100" height="40" fill="#74c0fc" stroke="#339af0" stroke-width="2" rx="5"/>
+    <text x="390" y="275" font-size="12" text-anchor="middle" fill="#333">アプリA</text>
+    
+    <!-- コンテナ2 -->
+    <rect x="460" y="190" width="100" height="50" fill="#ffd43b" stroke="#fab005" stroke-width="2" rx="5"/>
+    <text x="510" y="210" font-size="12" text-anchor="middle" fill="#333">ライブラリ</text>
+    <text x="510" y="228" font-size="11" text-anchor="middle" fill="#666">(依存関係)</text>
+    
+    <!-- アプリ2 -->
+    <rect x="460" y="250" width="100" height="40" fill="#74c0fc" stroke="#339af0" stroke-width="2" rx="5"/>
+    <text x="510" y="275" font-size="12" text-anchor="middle" fill="#333">アプリB</text>
+    
+    <!-- 軽量マーク -->
+    <text x="450" y="320" font-size="16" text-anchor="middle" fill="#37b24d">✓ 軽量</text>
+  </g>
+  
+  <!-- nix -->
+  <g>
+    <text x="750" y="30" font-size="18" font-weight="bold" text-anchor="middle" fill="#333">nix</text>
+    
+    <!-- ホストOS -->
+    <rect x="630" y="50" width="240" height="80" fill="#495057" stroke="#212529" stroke-width="2" rx="5"/>
+    <text x="750" y="95" font-size="14" text-anchor="middle" fill="white">ホストOS</text>
+    
+    <!-- nix store -->
+    <rect x="630" y="140" width="240" height="80" fill="#9775fa" stroke="#7950f2" stroke-width="2" rx="5"/>
+    <text x="750" y="165" font-size="13" text-anchor="middle" fill="white">nix store</text>
+    <text x="750" y="185" font-size="11" text-anchor="middle" fill="#e5dbff">(分離されたパッケージ)</text>
+    <text x="750" y="205" font-size="11" text-anchor="middle" fill="#e5dbff">(symlink経由で参照)</text>
+    
+    <!-- シェル環境1 -->
+    <rect x="640" y="230" width="100" height="60" fill="#e7f5ff" stroke="#4dabf7" stroke-width="2" rx="5" stroke-dasharray="5,5"/>
+    <text x="690" y="255" font-size="12" text-anchor="middle" fill="#1971c2">シェル環境A</text>
+    <text x="690" y="273" font-size="10" text-anchor="middle" fill="#1971c2">(一時的)</text>
+    
+    <!-- シェル環境2 -->
+    <rect x="760" y="230" width="100" height="60" fill="#e7f5ff" stroke="#4dabf7" stroke-width="2" rx="5" stroke-dasharray="5,5"/>
+    <text x="810" y="255" font-size="12" text-anchor="middle" fill="#1971c2">シェル環境B</text>
+    <text x="810" y="273" font-size="10" text-anchor="middle" fill="#1971c2">(一時的)</text>
+    
+    <!-- 超軽量マーク -->
+    <text x="750" y="320" font-size="16" text-anchor="middle" fill="#37b24d">✓✓ 超軽量</text>
+    <text x="750" y="345" font-size="14" text-anchor="middle" fill="#37b24d">仮想化なし</text>
+  </g>
+  
+  <!-- 比較ポイント -->
+  <g>
+    <rect x="50" y="380" width="800" height="100" fill="#f8f9fa" stroke="#dee2e6" stroke-width="2" rx="5"/>
+    
+    <text x="150" y="410" font-size="13" text-anchor="middle" fill="#666">分離度: ★★★</text>
+    <text x="150" y="435" font-size="13" text-anchor="middle" fill="#666">速度: ★☆☆</text>
+    <text x="150" y="460" font-size="13" text-anchor="middle" fill="#666">セットアップ: 複雑</text>
+    
+    <text x="450" y="410" font-size="13" text-anchor="middle" fill="#666">分離度: ★★☆</text>
+    <text x="450" y="435" font-size="13" text-anchor="middle" fill="#666">速度: ★★☆</text>
+    <text x="450" y="460" font-size="13" text-anchor="middle" fill="#666">セットアップ: やや複雑</text>
+    
+    <text x="750" y="410" font-size="13" text-anchor="middle" fill="#666">分離度: ★★☆</text>
+    <text x="750" y="435" font-size="13" text-anchor="middle" fill="#666">速度: ★★★</text>
+    <text x="750" y="460" font-size="13" text-anchor="middle" fill="#666">セットアップ: シンプル</text>
+  </g>
+</svg>

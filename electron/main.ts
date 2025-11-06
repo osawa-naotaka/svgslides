@@ -1,23 +1,7 @@
 import path from "node:path";
 import { cwd } from "node:process";
-import { fileURLToPath } from "node:url";
 import { app, BrowserWindow } from "electron";
 
-// const require = createRequire(import.meta.url)
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
-
-// The built directory structure
-//
-// ├─┬─┬ dist
-// │ │ └── index.html
-// │ │
-// │ ├─┬ dist-electron
-// │ │ ├── main.js
-// │ │ └── preload.mjs
-// │
-process.env.APP_ROOT = path.join(__dirname, "..");
-
-// 🚧 Use ['ENV_NAME'] avoid vite:define plugin - Vite@2.x
 export const VITE_DEV_SERVER_URL = process.env.VITE_DEV_SERVER_URL;
 
 let win: BrowserWindow | null;

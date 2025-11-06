@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 900 500"
+   version="1.1"
+   id="svg31"
+   sodipodi:docname="04_flake_workflow.svg"
+   inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview31"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="2.138998"
+     inkscape:cx="541.60873"
+     inkscape:cy="352.73525"
+     inkscape:window-width="3840"
+     inkscape:window-height="2054"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g12" />
+  <!-- タイトル -->
+  <text
+     x="450"
+     y="35"
+     font-size="22"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333"
+     id="text1">nix flake ワークフロー</text>
+  <!-- ステップ1: リポジトリ -->
+  <g
+     id="g6">
+    <text
+       x="150"
+       y="90"
+       font-size="16"
+       font-weight="bold"
+       text-anchor="middle"
+       fill="#495057"
+       id="text2">STEP 1</text>
+    <rect
+       x="50"
+       y="110"
+       width="200"
+       height="140"
+       fill="#fff"
+       stroke="#868e96"
+       stroke-width="2"
+       rx="8"
+       id="rect2" />
+    <!-- Gitアイコン風 -->
+    <circle
+       cx="150"
+       cy="150"
+       r="25"
+       fill="#f03e3e"
+       stroke="#c92a2a"
+       stroke-width="2"
+       id="circle2" />
+    <text
+       x="150"
+       y="160"
+       font-size="20"
+       font-weight="bold"
+       text-anchor="middle"
+       fill="white"
+       id="text3">Git</text>
+    <text
+       x="150"
+       y="195"
+       font-size="14"
+       text-anchor="middle"
+       fill="#495057"
+       id="text4">リポジトリ</text>
+    <rect
+       x="70"
+       y="205"
+       width="160"
+       height="30"
+       fill="#f1f3f5"
+       stroke="#adb5bd"
+       stroke-width="1"
+       rx="4"
+       id="rect4" />
+    <text
+       x="150"
+       y="225"
+       font-size="11"
+       text-anchor="middle"
+       fill="#495057"
+       font-family="monospace"
+       id="text5">flake.nix</text>
+    <text
+       x="146.72743"
+       y="268.41516"
+       font-size="13px"
+       text-anchor="middle"
+       fill="#228be6"
+       font-weight="bold"
+       id="text6">git clone</text>
+  </g>
+  <!-- 矢印1 -->
+  <path
+     d="M 250 180 L 330 180"
+     stroke="#495057"
+     stroke-width="3"
+     fill="none"
+     marker-end="url(#arrow1)"
+     id="path6" />
+  <!-- ステップ2: ローカル環境 -->
+  <g
+     id="g12">
+    <text
+       x="450"
+       y="90"
+       font-size="16"
+       font-weight="bold"
+       text-anchor="middle"
+       fill="#495057"
+       id="text7">STEP 2</text>
+    <rect
+       x="340"
+       y="110"
+       width="220"
+       height="180"
+       fill="#fff"
+       stroke="#868e96"
+       stroke-width="2"
+       rx="8"
+       id="rect7" />
+    <text
+       x="450"
+       y="140"
+       font-size="14"
+       text-anchor="middle"
+       fill="#495057"
+       id="text8">ローカル環境</text>
+    <rect
+       x="360"
+       y="150"
+       width="180"
+       height="30"
+       fill="#f1f3f5"
+       stroke="#adb5bd"
+       stroke-width="1"
+       rx="4"
+       id="rect8" />
+    <text
+       x="450"
+       y="170"
+       font-size="11"
+       text-anchor="middle"
+       fill="#495057"
+       font-family="monospace"
+       id="text9">flake.nix</text>
+    <rect
+       x="360"
+       y="190"
+       width="180"
+       height="30"
+       fill="#fff3bf"
+       stroke="#fab005"
+       stroke-width="1"
+       rx="4"
+       id="rect9" />
+    <text
+       x="450"
+       y="210"
+       font-size="11"
+       text-anchor="middle"
+       fill="#495057"
+       font-family="monospace"
+       id="text10">flake.lock</text>
+    <text
+       x="525.97473"
+       y="210"
+       font-size="9px"
+       text-anchor="end"
+       fill="#f76707"
+       id="text11">自動生成</text>
+    <rect
+       x="360"
+       y="235"
+       width="180"
+       height="40"
+       fill="#d0ebff"
+       stroke="#339af0"
+       stroke-width="2"
+       rx="4"
+       id="rect11" />
+    <text
+       x="450"
+       y="260"
+       font-size="13"
+       text-anchor="middle"
+       fill="#1971c2"
+       font-weight="bold"
+       id="text12">nix develop</text>
+  </g>
+  <!-- 矢印2 -->
+  <path
+     d="M 560 200 L 640 200"
+     stroke="#495057"
+     stroke-width="3"
+     fill="none"
+     marker-end="url(#arrow1)"
+     id="path12" />
+  <!-- ステップ3: 開発環境構築 -->
+  <g
+     id="g17">
+    <text
+       x="750"
+       y="90"
+       font-size="16"
+       font-weight="bold"
+       text-anchor="middle"
+       fill="#495057"
+       id="text13">STEP 3</text>
+    <rect
+       x="650"
+       y="110"
+       width="200"
+       height="180"
+       fill="#e7f5ff"
+       stroke="#4dabf7"
+       stroke-width="3"
+       rx="8"
+       id="rect13" />
+    <text
+       x="750"
+       y="140"
+       font-size="14"
+       font-weight="bold"
+       text-anchor="middle"
+       fill="#1971c2"
+       id="text14">開発環境構築完了</text>
+    <!-- ツールアイコン -->
+    <rect
+       x="670"
+       y="155"
+       width="160"
+       height="35"
+       fill="#74c0fc"
+       stroke="#339af0"
+       stroke-width="2"
+       rx="5"
+       id="rect14" />
+    <text
+       x="750"
+       y="178"
+       font-size="12"
+       text-anchor="middle"
+       fill="#1864ab"
+       font-weight="bold"
+       id="text15">rustc / cargo</text>
+    <rect
+       x="670"
+       y="200"
+       width="160"
+       height="35"
+       fill="#74c0fc"
+       stroke="#339af0"
+       stroke-width="2"
+       rx="5"
+       id="rect15" />
+    <text
+       x="750"
+       y="223"
+       font-size="12px"
+       text-anchor="middle"
+       fill="#1864ab"
+       font-weight="bold"
+       id="text16">rust-src</text>
+    <rect
+       x="670"
+       y="245"
+       width="160"
+       height="35"
+       fill="#74c0fc"
+       stroke="#339af0"
+       stroke-width="2"
+       rx="5"
+       id="rect16" />
+    <text
+       x="750"
+       y="268"
+       font-size="12"
+       text-anchor="middle"
+       fill="#1864ab"
+       font-weight="bold"
+       id="text17">その他ツール</text>
+  </g>
+  <!-- nix storeとの関係 -->
+  <g
+     id="g27">
+    <text
+       x="450"
+       y="340"
+       font-size="16"
+       font-weight="bold"
+       text-anchor="middle"
+       fill="#5f3dc4"
+       id="text18">nix store から自動取得</text>
+    <rect
+       x="200"
+       y="360"
+       width="500"
+       height="120"
+       fill="#f3f0ff"
+       stroke="#9775fa"
+       stroke-width="3"
+       rx="8"
+       id="rect18" />
+    <text
+       x="450"
+       y="390"
+       font-size="14"
+       text-anchor="middle"
+       fill="#7950f2"
+       id="text19">パッケージ保管場所</text>
+    <!-- パッケージ -->
+    <rect
+       x="220"
+       y="405"
+       width="90"
+       height="50"
+       fill="#d0bfff"
+       stroke="#9775fa"
+       stroke-width="2"
+       rx="5"
+       id="rect19" />
+    <text
+       x="265"
+       y="425"
+       font-size="11"
+       text-anchor="middle"
+       fill="#5f3dc4"
+       id="text20">rustc</text>
+    <text
+       x="265"
+       y="442"
+       font-size="9"
+       text-anchor="middle"
+       fill="#6741d9"
+       id="text21">v1.70.0</text>
+    <rect
+       x="330"
+       y="405"
+       width="90"
+       height="50"
+       fill="#d0bfff"
+       stroke="#9775fa"
+       stroke-width="2"
+       rx="5"
+       id="rect21" />
+    <text
+       x="375"
+       y="425"
+       font-size="11"
+       text-anchor="middle"
+       fill="#5f3dc4"
+       id="text22">cargo</text>
+    <text
+       x="375"
+       y="442"
+       font-size="9"
+       text-anchor="middle"
+       fill="#6741d9"
+       id="text23">v1.70.0</text>
+    <rect
+       x="440"
+       y="405"
+       width="90"
+       height="50"
+       fill="#d0bfff"
+       stroke="#9775fa"
+       stroke-width="2"
+       rx="5"
+       id="rect23" />
+    <text
+       x="485"
+       y="425"
+       font-size="11px"
+       text-anchor="middle"
+       fill="#5f3dc4"
+       id="text24">rust-src</text>
+    <text
+       x="485"
+       y="442"
+       font-size="9"
+       text-anchor="middle"
+       fill="#6741d9"
+       id="text25">latest</text>
+    <rect
+       x="550"
+       y="405"
+       width="90"
+       height="50"
+       fill="#d0bfff"
+       stroke="#9775fa"
+       stroke-width="2"
+       rx="5"
+       id="rect25" />
+    <text
+       x="595"
+       y="425"
+       font-size="11"
+       text-anchor="middle"
+       fill="#5f3dc4"
+       id="text26">libs</text>
+    <text
+       x="595"
+       y="442"
+       font-size="9"
+       text-anchor="middle"
+       fill="#6741d9"
+       id="text27">各種</text>
+    <!-- 参照線 -->
+    <path
+       d="M 450 360 L 750 290"
+       stroke="#9775fa"
+       stroke-width="2"
+       stroke-dasharray="5,5"
+       fill="none"
+       id="path27" />
+  </g>
+  <!-- ステップ4: 開発 -->
+  <!-- 利点の説明 -->
+  <!-- Arrow marker -->
+  <defs
+     id="defs31">
+    <marker
+       id="arrow1"
+       markerWidth="10"
+       markerHeight="10"
+       refX="9"
+       refY="3"
+       orient="auto">
+      <polygon
+         points="0 0, 10 3, 0 6"
+         fill="#495057"
+         id="polygon31" />
+    </marker>
+  </defs>
+</svg>

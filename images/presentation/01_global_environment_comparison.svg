@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 800 400"
+   version="1.1"
+   id="svg34"
+   sodipodi:docname="01_global_environment_comparison.svg"
+   inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview34"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="2.26875"
+     inkscape:cx="303.91185"
+     inkscape:cy="175.64738"
+     inkscape:window-width="3840"
+     inkscape:window-height="2054"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg34" />
+  <!-- 従来のグローバル環境 -->
+  <g
+     id="g11"
+     transform="translate(59.063361,-5.2892562)">
+    <text
+       x="150"
+       y="30"
+       font-size="20px"
+       font-weight="bold"
+       text-anchor="middle"
+       fill="#333333"
+       id="text1">従来</text>
+    <!-- OS環境 -->
+    <rect
+       x="20"
+       y="50"
+       width="260"
+       height="320"
+       fill="#e8f4f8"
+       stroke="#4a90a4"
+       stroke-width="3"
+       rx="10"
+       id="rect1" />
+    <text
+       x="150"
+       y="80"
+       font-size="16px"
+       text-anchor="middle"
+       fill="#333333"
+       id="text2">OS環境</text>
+    <!-- ごちゃごちゃしたパッケージ -->
+    <rect
+       x="40"
+       y="100"
+       width="80"
+       height="40"
+       fill="#ff6b6b"
+       stroke="#c92a2a"
+       stroke-width="2"
+       rx="5"
+       id="rect2" />
+    <text
+       x="80"
+       y="125"
+       font-size="12px"
+       text-anchor="middle"
+       fill="#ffffff"
+       id="text3">Python 3.8</text>
+    <rect
+       x="140"
+       y="100"
+       width="80"
+       height="40"
+       fill="#ff8787"
+       stroke="#c92a2a"
+       stroke-width="2"
+       rx="5"
+       id="rect3" />
+    <text
+       x="180"
+       y="125"
+       font-size="12px"
+       text-anchor="middle"
+       fill="#ffffff"
+       id="text4">Node 14</text>
+    <rect
+       x="40"
+       y="160"
+       width="80"
+       height="40"
+       fill="#ffa94d"
+       stroke="#e67700"
+       stroke-width="2"
+       rx="5"
+       id="rect4" />
+    <text
+       x="80"
+       y="185"
+       font-size="12px"
+       text-anchor="middle"
+       fill="#ffffff"
+       id="text5">gcc 9</text>
+    <rect
+       x="140"
+       y="160"
+       width="80"
+       height="40"
+       fill="#ff8787"
+       stroke="#c92a2a"
+       stroke-width="2"
+       rx="5"
+       id="rect5" />
+    <text
+       x="180"
+       y="185"
+       font-size="12px"
+       text-anchor="middle"
+       fill="#ffffff"
+       id="text6">Python 3.10</text>
+    <rect
+       x="40"
+       y="220"
+       width="80"
+       height="40"
+       fill="#ffd43b"
+       stroke="#fab005"
+       stroke-width="2"
+       rx="5"
+       id="rect6" />
+    <text
+       x="80"
+       y="245"
+       font-size="12px"
+       text-anchor="middle"
+       fill="#333333"
+       id="text7">lib A v1</text>
+    <rect
+       x="140"
+       y="220"
+       width="80"
+       height="40"
+       fill="#ffd43b"
+       stroke="#fab005"
+       stroke-width="2"
+       rx="5"
+       id="rect7" />
+    <text
+       x="180"
+       y="245"
+       font-size="12px"
+       text-anchor="middle"
+       fill="#333333"
+       id="text8">lib B v2</text>
+    <rect
+       x="40"
+       y="280"
+       width="80"
+       height="40"
+       fill="#ffd43b"
+       stroke="#fab005"
+       stroke-width="2"
+       rx="5"
+       id="rect8" />
+    <text
+       x="80"
+       y="305"
+       font-size="12px"
+       text-anchor="middle"
+       fill="#333333"
+       id="text9">lib A v2</text>
+    <rect
+       x="140"
+       y="280"
+       width="80"
+       height="40"
+       fill="#ff8787"
+       stroke="#c92a2a"
+       stroke-width="2"
+       rx="5"
+       id="rect9" />
+    <text
+       x="180"
+       y="305"
+       font-size="12px"
+       text-anchor="middle"
+       fill="#ffffff"
+       id="text10">Rust</text>
+    <!-- 競合マーク（lib A v1とv2の間） -->
+    <path
+       d="m 69.104683,247.49311 20,20 m 0,-20 -20,20"
+       stroke="#c92a2a"
+       stroke-width="4"
+       id="path10" />
+    <path
+       d="m 69.104683,272.06612 20,20 m 0,-20 -20,20"
+       stroke="#c92a2a"
+       stroke-width="4"
+       id="path11" />
+  </g>
+  <!-- 矢印 -->
+  <g
+     id="g12"
+     transform="matrix(0.39303617,0,0,1,238.94865,-3.0853994)">
+    <path
+       d="M 300,200 H 480"
+       stroke="#666666"
+       stroke-width="3"
+       fill="none"
+       marker-end="url(#arrowhead)"
+       id="path12" />
+  </g>
+  <!-- nixの環境 -->
+  <g
+     id="g34"
+     transform="translate(-67.438016,-9.2561983)">
+    <text
+       x="650"
+       y="30"
+       font-size="20px"
+       font-weight="bold"
+       text-anchor="middle"
+       fill="#333333"
+       id="text12">nix</text>
+    <!-- OS環境（クリーン） -->
+    <rect
+       x="520"
+       y="50"
+       width="260"
+       height="100"
+       fill="#e7f5ff"
+       stroke="#4a90a4"
+       stroke-width="3"
+       rx="10"
+       id="rect12" />
+    <text
+       x="650"
+       y="80"
+       font-size="16px"
+       text-anchor="middle"
+       fill="#333333"
+       id="text13">OS環境</text>
+    <text
+       x="650"
+       y="110"
+       font-size="24px"
+       text-anchor="middle"
+       fill="#4dabf7"
+       id="text14">✓</text>
+    <text
+       x="650"
+       y="140"
+       font-size="14px"
+       text-anchor="middle"
+       fill="#1971c2"
+       id="text15">クリーン</text>
+    <!-- nix store -->
+    <rect
+       x="520"
+       y="165"
+       width="260"
+       height="205"
+       fill="#f3f0ff"
+       stroke="#7950f2"
+       stroke-width="3"
+       rx="10"
+       id="rect15" />
+    <text
+       x="650"
+       y="190"
+       font-size="16px"
+       text-anchor="middle"
+       fill="#333333"
+       id="text16">nix store</text>
+    <!-- Python 3.8 環境グループ -->
+    <g
+       id="g21">
+      <rect
+         x="530"
+         y="200"
+         width="70"
+         height="155"
+         fill="#e5dbff"
+         stroke="#9775fa"
+         stroke-width="2"
+         rx="5"
+         stroke-dasharray="3, 3"
+         id="rect16" />
+      <rect
+         x="535"
+         y="205"
+         width="60"
+         height="28"
+         fill="#ff6b6b"
+         stroke="#c92a2a"
+         stroke-width="2"
+         rx="4"
+         id="rect17" />
+      <text
+         x="565"
+         y="223"
+         font-size="10px"
+         text-anchor="middle"
+         fill="#ffffff"
+         id="text17">Py 3.8</text>
+      <rect
+         x="535"
+         y="238"
+         width="60"
+         height="25"
+         fill="#d0bfff"
+         stroke="#9775fa"
+         stroke-width="1"
+         rx="3"
+         id="rect18" />
+      <text
+         x="565"
+         y="254"
+         font-size="9px"
+         text-anchor="middle"
+         fill="#333333"
+         id="text18">gcc 9</text>
+      <rect
+         x="535"
+         y="268"
+         width="60"
+         height="25"
+         fill="#d0bfff"
+         stroke="#9775fa"
+         stroke-width="1"
+         rx="3"
+         id="rect19" />
+      <text
+         x="565"
+         y="284"
+         font-size="9px"
+         text-anchor="middle"
+         fill="#333333"
+         id="text19">lib A v1</text>
+      <rect
+         x="535"
+         y="298"
+         width="60"
+         height="25"
+         fill="#d0bfff"
+         stroke="#9775fa"
+         stroke-width="1"
+         rx="3"
+         id="rect20" />
+      <text
+         x="565"
+         y="314"
+         font-size="9px"
+         text-anchor="middle"
+         fill="#333333"
+         id="text20">lib B v2</text>
+      <rect
+         x="535"
+         y="328"
+         width="60"
+         height="25"
+         fill="#d0bfff"
+         stroke="#9775fa"
+         stroke-width="1"
+         rx="3"
+         id="rect21" />
+      <text
+         x="565"
+         y="344"
+         font-size="9px"
+         text-anchor="middle"
+         fill="#333333"
+         id="text21">lib C</text>
+    </g>
+    <!-- Python 3.10 環境グループ -->
+    <g
+       id="g27">
+      <rect
+         x="610"
+         y="200"
+         width="70"
+         height="155"
+         fill="#e5dbff"
+         stroke="#9775fa"
+         stroke-width="2"
+         rx="5"
+         stroke-dasharray="3, 3"
+         id="rect22" />
+      <rect
+         x="615"
+         y="205"
+         width="60"
+         height="28"
+         fill="#ff8787"
+         stroke="#c92a2a"
+         stroke-width="2"
+         rx="4"
+         id="rect23" />
+      <text
+         x="645"
+         y="223"
+         font-size="10px"
+         text-anchor="middle"
+         fill="#ffffff"
+         id="text23">Py 3.10</text>
+      <rect
+         x="615"
+         y="238"
+         width="60"
+         height="25"
+         fill="#d0bfff"
+         stroke="#9775fa"
+         stroke-width="1"
+         rx="3"
+         id="rect24" />
+      <text
+         x="645"
+         y="254"
+         font-size="9px"
+         text-anchor="middle"
+         fill="#333333"
+         id="text24">gcc 11</text>
+      <rect
+         x="615"
+         y="268"
+         width="60"
+         height="25"
+         fill="#d0bfff"
+         stroke="#9775fa"
+         stroke-width="1"
+         rx="3"
+         id="rect25" />
+      <text
+         x="645"
+         y="284"
+         font-size="9px"
+         text-anchor="middle"
+         fill="#333333"
+         id="text25">lib A v2</text>
+      <rect
+         x="615"
+         y="298"
+         width="60"
+         height="25"
+         fill="#d0bfff"
+         stroke="#9775fa"
+         stroke-width="1"
+         rx="3"
+         id="rect26" />
+      <text
+         x="645"
+         y="314"
+         font-size="9px"
+         text-anchor="middle"
+         fill="#333333"
+         id="text26">lib B v3</text>
+      <rect
+         x="615"
+         y="328"
+         width="60"
+         height="25"
+         fill="#d0bfff"
+         stroke="#9775fa"
+         stroke-width="1"
+         rx="3"
+         id="rect27" />
+      <text
+         x="645"
+         y="344"
+         font-size="9px"
+         text-anchor="middle"
+         fill="#333333"
+         id="text27">lib D</text>
+    </g>
+    <!-- Node.js + Rust 環境グループ -->
+    <g
+       id="g33">
+      <rect
+         x="690"
+         y="200"
+         width="80"
+         height="90"
+         fill="#e5dbff"
+         stroke="#9775fa"
+         stroke-width="2"
+         rx="5"
+         stroke-dasharray="3, 3"
+         id="rect28" />
+      <rect
+         x="695"
+         y="205"
+         width="70"
+         height="28"
+         fill="#ffa94d"
+         stroke="#e67700"
+         stroke-width="2"
+         rx="4"
+         id="rect29" />
+      <text
+         x="730"
+         y="223"
+         font-size="10px"
+         text-anchor="middle"
+         fill="#ffffff"
+         id="text29">Node 14</text>
+      <rect
+         x="695"
+         y="238"
+         width="70"
+         height="25"
+         fill="#d0bfff"
+         stroke="#9775fa"
+         stroke-width="1"
+         rx="3"
+         id="rect30" />
+      <text
+         x="730"
+         y="254"
+         font-size="9px"
+         text-anchor="middle"
+         fill="#333333"
+         id="text30">npm</text>
+      <rect
+         x="695"
+         y="268"
+         width="70"
+         height="18"
+         fill="#d0bfff"
+         stroke="#9775fa"
+         stroke-width="1"
+         rx="3"
+         id="rect31" />
+      <text
+         x="730"
+         y="280"
+         font-size="8px"
+         text-anchor="middle"
+         fill="#333333"
+         id="text31">その他</text>
+      <rect
+         x="695"
+         y="300"
+         width="70"
+         height="28"
+         fill="#ff8787"
+         stroke="#c92a2a"
+         stroke-width="2"
+         rx="4"
+         id="rect32" />
+      <text
+         x="730"
+         y="318"
+         font-size="10px"
+         text-anchor="middle"
+         fill="#ffffff"
+         id="text32">Rust</text>
+      <rect
+         x="695"
+         y="333"
+         width="70"
+         height="18"
+         fill="#d0bfff"
+         stroke="#9775fa"
+         stroke-width="1"
+         rx="3"
+         id="rect33" />
+      <text
+         x="730"
+         y="345"
+         font-size="8px"
+         text-anchor="middle"
+         fill="#333333"
+         id="text33">cargo</text>
+    </g>
+  </g>
+  <!-- Arrow marker definition -->
+  <defs
+     id="defs34">
+    <marker
+       id="arrowhead"
+       markerWidth="10"
+       markerHeight="10"
+       refX="9"
+       refY="3"
+       orient="auto">
+      <polygon
+         points="0 0, 10 3, 0 6"
+         fill="#666"
+         id="polygon34" />
+    </marker>
+  </defs>
+</svg>
