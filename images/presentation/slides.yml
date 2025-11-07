@@ -1,0 +1,6 @@
+slides:
+  - path: "./01_global_environment_comparison.svg"
+  - path: "./02_environment_separation_comparison.svg"
+  - path: "./03_version_coexistence.svg"
+  - path: "./04_flake_workflow.svg"
+  
