@@ -1,6 +1,7 @@
 import path from "node:path";
 import { cwd } from "node:process";
-import { app, BrowserWindow } from "electron";
+import { app, BrowserWindow, ipcMain } from "electron";
+import { presenPath, readAllSlides, readAndParseYaml } from "./lib/yaml";
 
 export const VITE_DEV_SERVER_URL = process.env.VITE_DEV_SERVER_URL;
 
@@ -45,4 +46,7 @@ app.on("activate", () => {
     }
 });
 
-app.whenReady().then(createWindow);
+app.whenReady().then(() => {
+    ipcMain.handle("getSlides", () => readAllSlides(readAndParseYaml(presenPath("slides.yml"))));
+    createWindow();
+});

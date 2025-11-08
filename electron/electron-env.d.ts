@@ -1,6 +1,10 @@
 /// <reference types="vite-plugin-electron/electron-env" />
 
+import { Slides } from "./lib/yaml";
+
 // Used in Renderer process, expose in `preload.ts`
 interface Window {
-    ipcRenderer: import("electron").IpcRenderer;
+    api: {
+        getSlides: () => Slides;
+    };
 }
