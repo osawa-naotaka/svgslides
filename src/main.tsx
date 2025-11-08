@@ -4,12 +4,10 @@ import App from "./App.tsx";
 import "./index.css";
 
 const root = document.getElementById("root");
-if (root) {
-    ReactDOM.createRoot(root).render(
-        <React.StrictMode>
-            <App />
-        </React.StrictMode>,
-    );
-}
+if (root === null) throw new Error("main.tsx: root element not found.");
 
-console.dir(await window.api.getSlides("./images/presentation/slides.yml"), { depth: null });
+ReactDOM.createRoot(root).render(
+    <React.StrictMode>
+        <App />
+    </React.StrictMode>,
+);
