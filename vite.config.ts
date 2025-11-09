@@ -25,5 +25,14 @@ export default defineConfig({
         ? undefined
         : {},
     }),
+    {
+      name: "csp-plugin",
+      transformIndexHtml(html, { server }) {
+        if(server) {
+          return html;
+        }
+        return html.replace(/'unsafe-inline'/, "");
+      }
+    }
   ],
 })
