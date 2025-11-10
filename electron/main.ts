@@ -1,17 +1,25 @@
 import path from "node:path";
-import { cwd } from "node:process";
 import { app, BrowserWindow, ipcMain } from "electron";
 import { readAllSlides, readAndParseYaml } from "./lib/yaml";
+import { fileURLToPath } from "node:url";
 
-export const VITE_DEV_SERVER_URL = process.env.VITE_DEV_SERVER_URL;
+const __dirname = path.dirname(fileURLToPath(import.meta.url))
+process.env.APP_ROOT = path.join(__dirname, '..')
+
+// 🚧 Use ['ENV_NAME'] avoid vite:define plugin - Vite@2.x
+export const VITE_DEV_SERVER_URL = process.env['VITE_DEV_SERVER_URL']
+export const MAIN_DIST = path.join(process.env.APP_ROOT, 'dist-electron')
+export const RENDERER_DIST = path.join(process.env.APP_ROOT, 'dist')
+
+process.env.VITE_PUBLIC = VITE_DEV_SERVER_URL ? path.join(process.env.APP_ROOT, 'public') : RENDERER_DIST
 
 let win: BrowserWindow | null;
 
 function createWindow() {
     win = new BrowserWindow({
-        icon: path.join(cwd(), "public", "gear-round-svgrepo-com.svg"),
+        icon: path.join(process.env.VITE_PUBLIC, "gear-round-svgrepo-com.svg"),
         webPreferences: {
-            preload: path.join(cwd(), "dist-electron", "preload.mjs"),
+            preload: path.join(__dirname, 'preload.mjs'),
         },
     });
 
@@ -23,7 +31,7 @@ function createWindow() {
     if (VITE_DEV_SERVER_URL) {
         win.loadURL(VITE_DEV_SERVER_URL);
     } else {
-        win.loadFile(path.join(cwd(), "dist", "index.html"));
+        win.loadFile(path.join(RENDERER_DIST, "index.html"));
     }
 }
 
