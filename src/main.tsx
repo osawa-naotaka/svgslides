@@ -11,4 +11,3 @@ ReactDOM.createRoot(root).render(
         <App />
     </BrowserRouter>,
 );
-

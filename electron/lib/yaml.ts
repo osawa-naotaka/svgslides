@@ -35,7 +35,7 @@ export function readAllSlides(slides: Slides): Slides {
         base_dir: slides.base_dir,
         slides: slides.slides.map(({ path }) => ({
             path,
-            content: readFileSync(p.join(slides.base_dir, path)).toString(),
+            content: readFileSync(p.join(slides.base_dir, path), "utf-8").toString(),
         })),
     };
 }

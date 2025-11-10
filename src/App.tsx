@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 import type { Slides } from "../electron/lib/yaml";
+import { svgToDataSrc } from "./lib/svg";
 
 export default function App() {
     const [slides, setSlides] = useState<Slides>();
 
     useEffect(() => {
-        // setSlides(window.app.getSlides("./images/presentation/slides.yml"));
         async function getSlidesFromMain() {
             setSlides(await window.api.getSlides("./images/presentation/slides.yml"));
         }
@@ -14,7 +14,9 @@ export default function App() {
     return (
         <ul>
             {slides?.slides.map((x) => (
-                <li key={x.path}>{x.path}</li>
+                <li key={x.path}>
+                    <img src={svgToDataSrc(x.content || "")} alt={x.path} />
+                </li>
             ))}
         </ul>
     );
